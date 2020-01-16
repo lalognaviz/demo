@@ -11,11 +11,12 @@ import org.springframework.stereotype.Service;
 public class VideoJuegoService {
 
     @Autowired
-    private final VideoJuegoRepository videojuegorepository;
+    private VideoJuegoRepository videojuegorepository;
+    /*private final VideoJuegoRepository videojuegorepository;
 
     public VideoJuegoService(VideoJuegoRepository videojuegorepository) {
         this.videojuegorepository = videojuegorepository;
-    }
+    }*/
 
     public List<Videojuego> buscarDestacados() {
         return videojuegorepository.findAll();
